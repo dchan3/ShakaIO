@@ -50,4 +50,13 @@ bool acceptName(char c){
     }
     return accept;
 }
+bool acceptName(){
+
+    bool accept = false;
+    while(isalpha(peek()) != 0){
+        get();
+        accept = true;
+    }
+    return true;
+}
 
